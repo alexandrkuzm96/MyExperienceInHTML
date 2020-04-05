@@ -6,6 +6,7 @@ public class Person {
     
     public Person(String name, int age) throws Exception{
         if(age<0) throw new Exception("Age is not valid "+age);
+        this.Age=age;
         this.Name=name;
     }
     public String getName(){return this.Name;}
