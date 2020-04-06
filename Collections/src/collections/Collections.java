@@ -12,6 +12,9 @@ public class Collections {
         System.out.println("LinkeList operations");
         ClassLinkedList linkedList=new ClassLinkedList();
         linkedList.ArrayOperation();
+        System.out.println("HashSet operations");
+        ClassHashSet hashSet=new ClassHashSet();
+        hashSet.ArrayOperation();
     }
     
 }
