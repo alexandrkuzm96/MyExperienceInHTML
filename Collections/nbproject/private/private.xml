@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/Collections.java</file>
-            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/ClassLinkedList.java</file>
-            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/ClassArrayList.java</file>
+            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/Client.java</file>
+            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/ClientComparator.java</file>
+            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/ClassThreeSet.java</file>
+            <file>file:/C:/Users/Alexandr/Documents/NetBeansProjects/Collections/src/collections/ClassArrayDeque.java</file>
         </group>
     </open-files>
 </project-private>
