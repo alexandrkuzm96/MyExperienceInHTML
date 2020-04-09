@@ -25,14 +25,16 @@ public class ClassThreeSet {
             System.out.println(s);
         }
         try{
-            Object cc=new NameComparator();
+            Object cc=new NameComparator().thenComparing(new AgeComparator());
             TreeSet<Client> cl=new TreeSet((Comparator) cc); 
             cl.add(new Client("Tom",34,1000));
             cl.add(new Client("Ada",25,1200));
+            cl.add(new Client("Ada",24,1200));
             for(Client c:cl)
             {
                 System.out.println(c.display());
             }
+            
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
