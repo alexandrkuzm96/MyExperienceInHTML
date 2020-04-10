@@ -18,6 +18,9 @@ public class Collections {
         System.out.println("TreeSet operation");
         ClassThreeSet treeSet =new ClassThreeSet();
         treeSet.ArrayoPERATION();
+        System.out.println("HashMap operations");
+        ClassMapHash m=new ClassMapHash();
+        m.ArrayOperation();
     }
     
 }
