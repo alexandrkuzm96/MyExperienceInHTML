@@ -5,10 +5,13 @@ public class WorkWithFile {
 
     public static void main(String[] args) {
         Writer w=new Writer();
-        Reader o=new Reader();
-        String s=o.ReadFromFile();
-        System.out.println(s);
-        w.WriteInFile(s);
+        Reader r=new Reader();
+        String str="Hello orld!!!";        
+        w.WriteInFile(str);
+        System.out.println("Text in file:\t"+r.ReadFromFile());
+        Print print=new Print();
+        print.WriteInFile();
+        print.PrintInFile();
         
     }
     
