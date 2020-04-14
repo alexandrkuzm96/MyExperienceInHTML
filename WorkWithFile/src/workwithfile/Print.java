@@ -11,7 +11,7 @@ public class Print {
         {
             String text="Name:\tTom\nAge\t29";
             p.println(text);
-            System.out.println("Файл записан.");
+            System.out.println("Файл записан. te1st.txt");
         }
         catch(Exception ex)
         {System.out.println(ex.getMessage());}
@@ -22,7 +22,7 @@ public class Print {
            print.print("Hello");
            print.print(" welcome to programm\n");
            print.printf("Name:\t%s\nAge:\t%d \n","Bob",34);
-           System.out.println("Файл записан.");
+           System.out.println("Файл записан. notex.txt");
        }
        catch(Exception ex)
        {
