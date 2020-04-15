@@ -3,7 +3,7 @@ package workwithfile;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-public class Print {
+public class Print implements IReaderWriter{
     
     public void WriteInFile(){
         try(FileOutputStream fos=new FileOutputStream("test.txt");
@@ -29,5 +29,10 @@ public class Print {
            System.out.println(ex.getMessage());
        }
        
+    }
+
+    @Override
+    public String ReadFromFile() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

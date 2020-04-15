@@ -8,9 +8,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 
-public class BufferedStream {
+public class BufferedStream implements IReaderWriter {
     
-    public void BufferedOutput(){
+    public void WriteInFile(){
         try(FileOutputStream fos=new FileOutputStream("notes2.txt");
             BufferedOutputStream bos=new BufferedOutputStream(fos)){
             String text="Lorem Lorem Lorem Lorem";
@@ -21,7 +21,7 @@ public class BufferedStream {
             System.out.println(ex.getMessage());
         }
     }
-    public String BufferedInput(){
+    public String ReadFromFile(){
         String str="";
         try(FileInputStream fis=new FileInputStream("notes2.txt");
             BufferedInputStream bis=new BufferedInputStream(fis)){

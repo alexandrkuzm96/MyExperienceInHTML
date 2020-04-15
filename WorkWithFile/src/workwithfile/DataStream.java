@@ -6,7 +6,7 @@ import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class DataStream {
+public class DataStream implements IReaderWriter{
     
     public void WriteInFile(){
         try(DataOutputStream dos=new DataOutputStream(new FileOutputStream("notes3.txt"))){
