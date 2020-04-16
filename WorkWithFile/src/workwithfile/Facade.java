@@ -9,6 +9,7 @@ public class Facade {
         FileWriterReader fwr=new FileWriterReader();
         DataStream ds=new DataStream();
         BufferedStream bs=new BufferedStream();        
+        ObjectStream os=new ObjectStream();
         System.out.print("Use file input/output stream\n");
         writerReader.WriteInFile();
         System.out.println("Text in file:\t"+writerReader.ReadFromFile());      
@@ -21,7 +22,11 @@ public class Facade {
         System.out.println("Use data output/input stream");
         ds.WriteInFile();
         System.out.println(ds.ReadFromFile());
+        
         fwr.WriteInFile();
         System.out.println(fwr.ReadFromFile());
+        
+        os.WriteInFile();
+            System.out.println(os.ReadFromFile());
     }
 }
