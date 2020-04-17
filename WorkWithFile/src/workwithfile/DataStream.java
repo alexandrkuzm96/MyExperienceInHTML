@@ -18,17 +18,17 @@ public class DataStream implements IReaderWriter{
             System.out.printf(ex.getMessage());
         }
     }
-    public String ReadFromFile(){
+    public StringBuilder ReadFromFile(){
+        StringBuilder str=new StringBuilder("");
         try(DataInputStream dis=new DataInputStream(new FileInputStream("notes3.txt"))){
-            int ch;
-            String str="";
+            int ch;            
             while((ch=dis.read())!=-1){
-                str+=(char)ch;
+                str.append((char)ch);
             }
             return str;
         }
         catch(Exception ex){
-            return ex.getMessage();
+            return str.append(ex.getMessage());
         }
     }
 }

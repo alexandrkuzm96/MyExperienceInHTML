@@ -14,19 +14,19 @@ public class FileOuutputInput implements IReaderWriter{
             System.out.println(ex.getMessage());            
         }
     }
-    public String ReadFromFile(){
-        String text="";
+    public StringBuilder ReadFromFile(){
+        StringBuilder text=new StringBuilder("");
         try(FileInputStream fis=new FileInputStream("c://games//test2.txt"))
         {            
-            int i=-1;
-            while((i=fis.read())!=-1){
-                text+=(char)i;
+            int ch;
+            while((ch=fis.read())!=-1){
+                text.append((char)ch);
             }
+            return text;
         }
         catch (Exception ex){
-            System.out.println(ex.getMessage());
+            return text.append(ex.getMessage());
         }
-        return text;
 }
 }
 

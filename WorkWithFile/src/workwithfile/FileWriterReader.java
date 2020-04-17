@@ -20,18 +20,18 @@ public class FileWriterReader implements IReaderWriter {
         }
     }
 
-    public String ReadFromFile() {
-       try(FileReader fr=new FileReader("notes4.txt")){
-           String str="";
+    public StringBuilder ReadFromFile() {
+        StringBuilder str =new StringBuilder("");
+       try(FileReader fr=new FileReader("notes4.txt")){           
            int ch;
            while((ch=fr.read())!=-1){
-               str+=(char)ch;
+               str.append((char)ch);
            }
            return str;
        }
        catch(Exception ex)
        {
-           return ex.getMessage();
+           return str.append(ex.getMessage());
        }
     }
 }

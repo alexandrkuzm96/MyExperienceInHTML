@@ -21,18 +21,18 @@ public class BufferedStream implements IReaderWriter {
             System.out.println(ex.getMessage());
         }
     }
-    public String ReadFromFile(){
-        String str="";
+    public StringBuilder ReadFromFile(){
+        StringBuilder str=new StringBuilder("");
         try(FileInputStream fis=new FileInputStream("notes2.txt");
             BufferedInputStream bis=new BufferedInputStream(fis)){
             int ch;
             while((ch=bis.read())!=-1){
-                str+=(char)ch;
+                str.append((char)ch);
             }
+            return str;
         }
         catch(IOException ex){
-            System.out.println(ex.getMessage());
+            return str.append(ex.getMessage());
         }
-        return str;
     }
 }

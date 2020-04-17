@@ -32,7 +32,8 @@ public class Print implements IReaderWriter{
     }
 
     @Override
-    public String ReadFromFile() {
+    public StringBuilder ReadFromFile() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 }
